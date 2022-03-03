@@ -13,10 +13,7 @@ jobs:
       - run: make
       - run: ./tests/tests
 
-      - name: Coveralls
-        run: coveralls -t ${{ secrets.coveralls_token }} --root . -E ".*external.*" -E ".*tests.*"
-
-
+    
   sonarcloud-check:
     needs: gtest-tests
     runs-on: ubuntu-latest
