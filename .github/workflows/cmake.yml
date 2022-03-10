@@ -8,6 +8,7 @@ jobs:
       - run: git submodule init
       - run: git submodule update
       - run: pip install --user cpp-coveralls
+      - run: sudo apt update 
       - run: sudo apt install -y qt5-qmake qt5-default
       - run: qmake
       - run: make
@@ -31,6 +32,7 @@ jobs:
           fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
       - run: git submodule init
       - run: git submodule update
+      - run: sudo apt update
       - run: sudo apt install -y qt5-qmake qt5-default
       - run: qmake
       - name: Set up JDK 11
