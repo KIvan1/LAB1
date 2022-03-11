@@ -28,7 +28,7 @@ TEST(oneroot_TEST, suite1)
     double x1;
     double x2;
     SolveEq(0, 2, 4, &x1, &x2);
-    EXPECT_EQ(x1, 2);
+    EXPECT_EQ(x1, -2);
 }
 
 TEST(oneroots_TEST, suite2)
