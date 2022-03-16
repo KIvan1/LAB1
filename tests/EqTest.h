@@ -71,13 +71,13 @@ TEST(tworoots_TEST, suite1_ret)
     EXPECT_EQ(c, 0);
 }
 
-TEST(tworoots_TEST, suite1)
+/*TEST(tworoots_TEST, suite1)
 {
     double x1;
     double x2;
     SolveEq(1, 2, -3, &x1, &x2);
     EXPECT_EQ(x1, 1);
     EXPECT_EQ(x2, -3);
-}
+}*/
 
 #endif // EQTEST_H
