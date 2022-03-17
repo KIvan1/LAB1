@@ -51,7 +51,7 @@ TEST(oneroot_TEST, suite2_ret)
 {
     double x1;
     double x2;
-    int c = SolveEq(0, 2, 4, &x1, &x2);
+    int c = SolveEq(1, 2, 1, &x1, &x2);
     EXPECT_EQ(c, 2);
 }
 
